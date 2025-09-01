@@ -1,4 +1,4 @@
-\# AI PCAP Analyzer
+# AI PCAP Analyzer
 
 
 
@@ -6,45 +6,45 @@ An intelligent network packet capture analyzer that uses AI to explain network t
 
 
 
-\## Features
+## Features
 
 
 
-\- 🔍 \*\*Automated PCAP Analysis\*\* - Converts binary packet captures to JSON and analyzes them
+- 🔍 **Automated PCAP Analysis** - Converts binary packet captures to JSON and analyzes them
 
-\- 🤖 \*\*AI-Powered Insights\*\* - Uses OpenAI models to interpret network traffic patterns
+- 🤖 **AI-Powered Insights** - Uses OpenAI models to interpret network traffic patterns
 
-\- 📦 \*\*Batch Processing\*\* - Handles large captures by processing packets in configurable batches
+- 📦 **Batch Processing** - Handles large captures by processing packets in configurable batches
 
-\- 📊 \*\*Progress Tracking\*\* - Visual ASCII progress bar for long-running analyses
+- 📊 **Progress Tracking** - Visual ASCII progress bar for long-running analyses
 
-\- 💾 \*\*File Output\*\* - Saves both summary and detailed analysis to text files
+- 💾 **File Output** - Saves both summary and detailed analysis to text files
 
-\- 🌍 \*\*Custom Prompts\*\* - Supports user-defined questions about the network traffic
+- 🌍 **Custom Prompts** - Supports user-defined questions about the network traffic
 
-\- 🔧 \*\*Flexible Configuration\*\* - Environment-based configuration for different AI endpoints
-
-
-
-\## Prerequisites
+- 🔧 **Flexible Configuration** - Environment-based configuration for different AI endpoints
 
 
 
-\### Required Software
-
-\- \*\*Python 3.6+\*\*
-
-\- \*\*Wireshark\*\* with `tshark` command-line utility
-
-\- \*\*OpenAI Python library\*\*: `pip install openai`
+## Prerequisites
 
 
 
-\### System Installation
+### Required Software
+
+- **Python 3.6+**
+
+- **Wireshark** with `tshark` command-line utility
+
+- **OpenAI Python library**: `pip install openai`
 
 
 
-\*\*Ubuntu/Debian:\*\*
+### System Installation
+
+
+
+**Ubuntu/Debian:**
 
 ```bash
 
@@ -56,7 +56,7 @@ sudo apt-get install wireshark-common
 
 
 
-\*\*macOS:\*\*
+**macOS:**
 
 ```bash
 
@@ -66,19 +66,19 @@ brew install wireshark
 
 
 
-\*\*Windows:\*\*
+**Windows:**
 
 Download and install Wireshark from https://www.wireshark.org/download.html
 
 
 
-\## Installation
+## Installation
 
 
 
-1\. Clone or download the script
+1. Clone or download the script
 
-2\. Install dependencies:
+2. Install dependencies:
 
 &nbsp;  ```bash
 
@@ -86,11 +86,11 @@ Download and install Wireshark from https://www.wireshark.org/download.html
 
 &nbsp;  ```
 
-3\. Ensure `tshark` is available in your PATH
+3. Ensure `tshark` is available in your PATH
 
 
 
-\## Configuration
+## Configuration
 
 
 
@@ -110,7 +110,7 @@ MODEL=gpt-4
 
 
 
-\### Configuration Options
+### Configuration Options
 
 
 
@@ -126,11 +126,11 @@ MODEL=gpt-4
 
 
 
-\## Usage
+## Usage
 
 
 
-\### Basic Analysis
+### Basic Analysis
 
 ```bash
 
@@ -140,7 +140,7 @@ python ai\_pcap\_explain.py capture.pcap
 
 
 
-\### Custom Question
+### Custom Question
 
 ```bash
 
@@ -150,7 +150,7 @@ python ai\_pcap\_explain.py capture.pcap "What security issues can you identify?
 
 
 
-\### Adjust Batch Size
+### Adjust Batch Size
 
 ```bash
 
@@ -160,7 +160,7 @@ python ai\_pcap\_explain.py capture.pcap --batch-size 20
 
 
 
-\### Complete Example
+### Complete Example
 
 ```bash
 
@@ -170,7 +170,7 @@ python ai\_pcap\_explain.py network\_trace.pcap "Analyze HTTP traffic patterns" 
 
 
 
-\## Output Files
+## Output Files
 
 
 
@@ -178,45 +178,45 @@ The script generates two output files:
 
 
 
-\- \*\*`summary.txt`\*\* - Comprehensive summary combining insights from all packet batches
+- **`summary.txt`** - Comprehensive summary combining insights from all packet batches
 
-\- \*\*`details.txt`\*\* - Detailed analysis of each individual batch
-
-
-
-\## How It Works
+- **`details.txt`** - Detailed analysis of each individual batch
 
 
 
-1\. \*\*Packet Extraction\*\* - Uses `tshark` to convert PCAP to JSON format
-
-2\. \*\*Batch Division\*\* - Splits packets into manageable chunks for AI processing
-
-3\. \*\*Batch Analysis\*\* - Each batch is analyzed separately by the AI model
-
-4\. \*\*Summary Generation\*\* - All batch analyses are combined into a final comprehensive summary
-
-5\. \*\*File Output\*\* - Results are saved to text files and displayed on screen
+## How It Works
 
 
 
-\## Use Cases
+1. **Packet Extraction** - Uses `tshark` to convert PCAP to JSON format
+
+2. **Batch Division** - Splits packets into manageable chunks for AI processing
+
+3. **Batch Analysis** - Each batch is analyzed separately by the AI model
+
+4. **Summary Generation** - All batch analyses are combined into a final comprehensive summary
+
+5. **File Output** - Results are saved to text files and displayed on screen
 
 
 
-\- \*\*Network Troubleshooting\*\* - Understand communication patterns and identify issues
-
-\- \*\*Security Analysis\*\* - Detect suspicious traffic patterns and potential threats
-
-\- \*\*Protocol Analysis\*\* - Learn how different network protocols behave in practice
-
-\- \*\*Educational Tool\*\* - Understand network communications with AI explanations
-
-\- \*\*Forensic Investigation\*\* - Analyze captured network evidence with AI assistance
+## Use Cases
 
 
 
-\## Example Output
+- **Network Troubleshooting** - Understand communication patterns and identify issues
+
+- **Security Analysis** - Detect suspicious traffic patterns and potential threats
+
+- **Protocol Analysis** - Learn how different network protocols behave in practice
+
+- **Educational Tool** - Understand network communications with AI explanations
+
+- **Forensic Investigation** - Analyze captured network evidence with AI assistance
+
+
+
+## Example Output
 
 
 
@@ -254,67 +254,67 @@ The network capture reveals primarily HTTP and DNS traffic between...
 
 
 
-\## Error Handling
+## Error Handling
 
 
 
 The script includes comprehensive error handling for:
 
-\- Missing or invalid PCAP files
+- Missing or invalid PCAP files
 
-\- Wireshark/tshark installation issues
+- Wireshark/tshark installation issues
 
-\- OpenAI API connection problems
+- OpenAI API connection problems
 
-\- Invalid JSON responses
+- Invalid JSON responses
 
-\- File writing permissions
-
-
-
-\## Limitations
+- File writing permissions
 
 
 
-\- Requires active internet connection for AI analysis
-
-\- API costs apply based on OpenAI pricing
-
-\- Large PCAP files may take significant time to process
-
-\- Analysis quality depends on the AI model used
+## Limitations
 
 
 
-\## Troubleshooting
+- Requires active internet connection for AI analysis
+
+- API costs apply based on OpenAI pricing
+
+- Large PCAP files may take significant time to process
+
+- Analysis quality depends on the AI model used
 
 
 
-\*\*"tshark binary not found"\*\*
-
-\- Ensure Wireshark is installed and `tshark` is in your PATH
+## Troubleshooting
 
 
 
-\*\*"Missing keys in .env"\*\*
+**"tshark binary not found"**
 
-\- Verify your `.env` file contains all required variables
-
-\- Check that your OpenAI API key is valid
+- Ensure Wireshark is installed and `tshark` is in your PATH
 
 
 
-\*\*"OpenAI request failed"\*\*
+**"Missing keys in .env"**
 
-\- Verify your API key and endpoint configuration
+- Verify your `.env` file contains all required variables
 
-\- Check your internet connection
-
-\- Ensure you have sufficient API credits
+- Check that your OpenAI API key is valid
 
 
 
-\## License
+**"OpenAI request failed"**
+
+- Verify your API key and endpoint configuration
+
+- Check your internet connection
+
+- Ensure you have sufficient API credits
+
+
+
+## License
 
 
 
@@ -322,7 +322,7 @@ This project is provided as-is for educational and professional use. Please ensu
 
 
 
-\## Contributing
+## Contributing
 
 
 
